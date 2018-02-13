@@ -6,7 +6,7 @@ cat > /tmp/taiga-circus.ini <<EOF
 [watcher:taiga]
 working_dir = /home/$USER/taiga-back
 cmd = gunicorn
-args = -w 3 -t 60 --pythonpath=. -b 127.0.0.1:8001 taiga.wsgi
+args = -w 3 -t 60 --pythonpath=. -b 18.219.166.205:8001 taiga.wsgi
 uid = $USER
 numprocesses = 1
 autostart = true
